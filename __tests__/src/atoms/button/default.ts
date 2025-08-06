@@ -1,4 +1,4 @@
-import ButtonProps from "../../../../src/atoms/button/type";
+import ButtonProps from "@atoms/button/type";
 
 const buttonDefaultProps: ButtonProps = {
   text: "Test",

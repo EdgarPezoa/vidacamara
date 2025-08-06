@@ -1,8 +1,8 @@
 import { vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Button from "../../../../src/atoms/button";
-import ButtonProps from "../../../../src/atoms/button/type";
+import Button from "@atoms/button";
+import ButtonProps from "@atoms/button/type";
 import buttonDefaultProps from "./default";
 
 describe("<Button />", () => {

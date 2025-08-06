@@ -1,6 +1,6 @@
 import type SearchPokemonProps from "./type";
-import Input from "../../atoms/input";
-import Button from "../../atoms/button";
+import Input from "@atoms/input";
+import Button from "@atoms/button";
 
 const SearchPokemon = ({
   title,

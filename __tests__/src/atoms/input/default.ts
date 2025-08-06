@@ -1,4 +1,4 @@
-import InputProps from "../../../../src/atoms/input/type";
+import InputProps from "@atoms/input/type";
 
 const inputDefaultProps: InputProps = {
   value: "",

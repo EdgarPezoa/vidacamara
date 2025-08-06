@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import SearchPokemonProps from "../../../../src/molecules/search-pokemon/type";
-import SearchPokemon from "../../../../src/molecules/search-pokemon";
+import SearchPokemonProps from "@molecules/search-pokemon/type";
+import SearchPokemon from "@molecules/search-pokemon";
 import searchPokemonDefaultProps from "./default";
 
 describe("<SearchPokemon />", () => {

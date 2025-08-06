@@ -1,8 +1,8 @@
 import { vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import InputProps from "../../../../src/atoms/input/type";
-import Input from "../../../../src/atoms/input";
+import InputProps from "@atoms/input/type";
+import Input from "@atoms/input";
 import inputDefaultProps from "./default";
 
 describe("<Input />", () => {
