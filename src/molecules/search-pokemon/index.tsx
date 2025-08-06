@@ -7,6 +7,7 @@ const SearchPokemon = ({
   value,
   onChange,
   onClick,
+  isLoading,
 }: SearchPokemonProps) => {
   return (
     <div className="flex flex-col gap-[10px]">
@@ -15,7 +16,7 @@ const SearchPokemon = ({
       </label>
       <div className="flex flex-row gap-[20px]">
         <Input id="searchInput" value={value} onChange={onChange} />
-        <Button text="Buscar" onClick={onClick} />
+        <Button text="Buscar" onClick={onClick} isLoading={isLoading} />
       </div>
     </div>
   );

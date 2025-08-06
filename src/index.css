@@ -6,3 +6,7 @@
   --color-background: #efefef;
   --color-gray: #878787;
 }
+
+body {
+  background-color: var(--color-background);
+}

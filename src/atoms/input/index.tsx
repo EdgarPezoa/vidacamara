@@ -12,7 +12,7 @@ const Input = ({ value, onChange, id }: InputProps) => {
   return (
     <input
       id={id}
-      className="border-2 border-gray rounded-xs p-[5px] text-sm"
+      className="bg-white border-2 border-gray rounded-xs p-[5px] text-sm"
       role="input"
       value={valueState}
       onChange={onChangeInput}

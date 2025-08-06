@@ -3,6 +3,7 @@ type SearchPokemonProps = {
   value: string;
   onChange: (value: string) => void;
   onClick: () => void;
+  isLoading?: boolean;
 };
 
 export default SearchPokemonProps;
