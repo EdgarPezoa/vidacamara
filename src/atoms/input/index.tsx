@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { InputProps } from "./type";
+import type InputProps from "./type";
 
 const Input = ({ value, onChange }: InputProps) => {
   const [valueState, setValueState] = useState(value);
