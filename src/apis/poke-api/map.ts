@@ -1,4 +1,4 @@
-import type StatsProps from "../../molecules/stats/type";
+import type StatsProps from "@organisms/stats/type";
 import type { PokeApiGetPokemon } from "./type";
 
 export const getPokemonMapper = (rawData: PokeApiGetPokemon): StatsProps => {
