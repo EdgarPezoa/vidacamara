@@ -9,16 +9,10 @@ import Stats from "@organisms/stats";
 
 const Home = () => {
   const [value, setValue] = useState<string>("");
-  const { fetch, data, isLoading } = useApi<PokeApiGetPokemon, StatsProps>(
-    () => getPokemon(value),
-    getPokemonMapper,
-  );
-
-  const onClick = () => {
-    if (value != "") {
-      fetch();
-    }
-  };
+  const { fetch, data, error, isLoading } = useApi<
+    PokeApiGetPokemon,
+    StatsProps
+  >(() => getPokemon(value), getPokemonMapper);
 
   return (
     <div className="flex flex-col items-center m-[30px]">
@@ -28,9 +22,12 @@ const Home = () => {
           title="Encuentra tú Pokémon"
           value={value}
           onChange={setValue}
-          onClick={onClick}
+          onClick={fetch}
           isLoading={isLoading}
         />
+        {error !== null && (
+          <p className="text-red-400">Hubo un problema, ¡intente nuevamente!</p>
+        )}
         {data && <Stats {...data} />}
       </div>
     </div>
