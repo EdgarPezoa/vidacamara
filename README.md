@@ -9,14 +9,12 @@ Tailwind is used for all styles
 
 Summary:
 
-- Typescript
-- ReactJS
-- Vitests
-- husky
-- tailwind
-- eslint
-- axios
-- Atom design
+- ReactJS with Typescript
+- Vitests and React Testing library
+- husky (test and eslint)
+- tailwind with custom values and colors
+- axios using a custom hook to manage fetching.
+- Atom design of folder structure
 
 Also husky is configured to prevent commits when test are no good and lint as well.
 
@@ -27,6 +25,8 @@ Find Aliases:
 - @atoms
 - @molecules
 - @organisms
+- @hooks
+- @apis
 
 ## Installation
 
@@ -42,6 +42,14 @@ Run project in dev mode
 
 ```bash
 npm run dev
+```
+
+## Run tests
+
+Run all tests
+
+```bash
+npm run test
 ```
 
 ## Figma design

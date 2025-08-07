@@ -16,6 +16,8 @@ export default defineConfig({
       "@atoms": path.resolve(__dirname, "./src/atoms"),
       "@molecules": path.resolve(__dirname, "./src/molecules"),
       "@organisms": path.resolve(__dirname, "./src/organisms"),
+      "@apis": path.resolve(__dirname, "./src/apis"),
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
     },
   },
 });
