@@ -8,6 +8,7 @@ import type StatsProps from "@organisms/stats/type";
 import Stats from "@organisms/stats";
 
 const Home = () => {
+  // TODO:Move all hooks to a file in home
   const [value, setValue] = useState<string>("");
   const { fetch, data, error, isLoading } = useApi<
     PokeApiGetPokemon,
@@ -25,9 +26,12 @@ const Home = () => {
           onClick={fetch}
           isLoading={isLoading}
         />
+
+        {/* TODO: Move to another component in home */}
         {error !== null && (
           <p className="text-red-400">Hubo un problema, ¡intente nuevamente!</p>
         )}
+
         {data && <Stats {...data} />}
       </div>
     </div>
