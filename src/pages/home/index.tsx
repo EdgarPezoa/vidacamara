@@ -1,10 +1,11 @@
 import { useState } from "react";
-import useApi from "../../hooks/useApi";
-import { getPokemon } from "../../apis/poke-api";
-import { getPokemonMapper } from "../../apis/poke-api/map";
-import type { PokeApiGetPokemon } from "../../apis/poke-api/type";
-import SearchPokemon from "../../molecules/search-pokemon";
-import type StatsProps from "../../molecules/stats/type";
+import useApi from "@hooks/useApi";
+import { getPokemon } from "@apis/poke-api";
+import { getPokemonMapper } from "@apis/poke-api/map";
+import type { PokeApiGetPokemon } from "@apis/poke-api/type";
+import SearchPokemon from "@molecules/search-pokemon";
+import type StatsProps from "@organisms/stats/type";
+import Stats from "@organisms/stats";
 
 const Home = () => {
   const [value, setValue] = useState<string>("");
@@ -30,6 +31,7 @@ const Home = () => {
           onClick={onClick}
           isLoading={isLoading}
         />
+        {data && <Stats {...data} />}
       </div>
     </div>
   );
