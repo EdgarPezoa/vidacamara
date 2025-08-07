@@ -21,4 +21,7 @@ export type PokeApiGetPokemon = {
       };
     },
   ];
+  sprites: {
+    front_default: string;
+  };
 };
